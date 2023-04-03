@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+}
+
+.container {
+  width: 50%;
+  margin: 4em auto;
+  text-align: center;
+  max-width: 800px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+span {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+#email {
+  margin: 2em 0.7em 0;
+  border: 1px solid hsl(223, 100%, 88%);
+  padding: 1em 13em 1em 1.5em;
+  border-radius: 20px;
+}
+
+::placeholder {
+  color: hsl(223, 100%, 88%);
+}
+
+.invalid-email {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: hsl(354, 100%, 66%);
+  text-align: left;
+  margin: 0.4em 6em;
+  visibility: hidden;
+}
+
+button {
+  background-color: rgb(79, 125, 243);
+  padding: 1em 4.5em;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.hero-image {
+  width: 90%;
+  margin-bottom: 4em;
+  margin-top: 4em;
+}
+
+.icons {
+  padding: 0.3em 0.7em;
+  border-radius: 50%;
+  border: 1px solid hsla(0, 0%, 84%, 0.906);
+  background-color: #fff;
+  margin-right: 1em;
+  color: rgb(79, 125, 243);
+}
+
+.icons:hover {
+  background-color: rgb(79, 125, 243);
+  color: #fff;
+}
+
+.twitter,
+.instagram {
+  padding: 0.3em 0.6em;
+}
+
+.copyright {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.7rem;
+  margin-bottom: 4em;
+}
+
+@media (min-width: 701px) and (max-width: 1135px) {
+  .container {
+    width: 85%;
+  }
+
+  .hero-image {
+    width: 75%;
+  }
+
+  .invalid-email {
+    margin-left: 15em;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  #email {
+    width: 80%;
+    margin-bottom: 1em;
+  }
+
+  .invalid-email {
+    position: relative;
+    bottom: 5em;
+  }
+
+  .notify-me {
+    position: relative;
+    top: 1.6em;
+    width: 80%;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Ping coming soon page</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/fbf40c768d.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <img src="images/logo.svg" alt="logo" />
+        <h1><span> We are launching</span> soon!</h1>
+
+        <form action="#">
+          <label for="email">Subscribe and get notified</label>
+          <br />
+          <input
+            type="email"
+            placeholder="Your email address..."
+            name="email"
+            id="email"
+          />
+
+          <button class="notify-me">Notify me</button>
+          <p class="invalid-email">Please provide a valid email address</p>
+        </form>
+      </header>
+      <img
+        class="hero-image"
+        src="images/illustration-dashboard.png"
+        alt="dashboard"
+      />
+
+      <footer>
+        <button class="icons">
+          <i class="fab fa-facebook-f fa-sm"></i>
+        </button>
+        <button class="icons twitter">
+          <i class="fab fa-twitter fa-xs"></i>
+        </button>
+        <button class="icons instagram">
+          <i class="fab fa-instagram fa-sm"></i>
+        </button>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+        <p class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Alessandra Becherelli</a>.
+        </p>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
